@@ -1,9 +1,9 @@
 ﻿/* Задача 65: Задайте значения M и N. Напишите программу, которая
 выведет все натуральные числа в промежутке от M до N. 
 Не стоит использовать в рекурсиях глобальные переменные, лучше передавать их в методе*/
-System.Console.WriteLine("Введите число");
+System.Console.WriteLine("Введите 1 число");
 int number1 = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите cтепень");
+System.Console.WriteLine("Введите 2 число");
 int number2 = int.Parse(Console.ReadLine());
 
 int Rec(int m, int n)
@@ -19,7 +19,9 @@ int Rec(int m, int n)
         return Rec((m - 1), n);
     }
     else
-        return n;
+        Console.Write(n);
+        return (n);
 }
 
 Rec(number1, number2);
+
